@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OldResidentDB" Class="SeniorDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-OT5IVM7S;Initial Catalog=OldResidentDB;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="OldResidentDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Seniors" Member="Seniors">
+    <Type Name="Senior">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="born" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="seniority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
